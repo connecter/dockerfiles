@@ -11,7 +11,7 @@ build:
     - script:
         name: build docker image
         code: |
-          docker build -t buddycloud .
+          cd buddycloud-stack &&  docker build -t buddycloud .
 
     - script:
         name: save docker image
